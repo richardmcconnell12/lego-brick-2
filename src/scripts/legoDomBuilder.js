@@ -1,4 +1,5 @@
 import data from "./legoData"
+import eventListener from "./eventListener";
 
 // Creating the data to be used in dropdown menu for brick colors
 
@@ -41,11 +42,10 @@ const domBuilder = {
                 saveButton.textContent = "Save New Lego"
                 saveButton.classList.add = ("#saveButton");
 
-                saveButton.addEventListener("click", )
-
-
+                saveButton.addEventListener("click", eventListener.handleSubmissionForm)
+                displayContainer.appendChild(saveButton);
             })
     }
-}
+};
 
 export default domBuilder
